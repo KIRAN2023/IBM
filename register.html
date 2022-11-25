@@ -258,11 +258,8 @@
                     }).then(() => {
                         var confirmation = window.confirm("Registered Successfully Are you sure you want to Login");
                         if (confirmation) {
-                            window.alert("Welcome TO RK GROUPS");
-
                             window.location.href = "login.html";
                         }
-                        alert("");
                     }).catch((error) => {
                         alert("error" + error);
                     })
