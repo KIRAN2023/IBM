@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Job Matchers</title>
+    <link rel="icon" type="image/gif/png" href="images/job_junction-logo-head.png">
+    <script src="https://kit.fontawesome.com/7bb9495e7b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="profilestyles.css">
+    <link rel="stylesheet" href="indexstyles.css">
+
+    <script src="index.js" defer></script>
+
+      
+</head>
+<body id="body">
+
+    <div class="menu_icon" id="menu">
+        <div class="first_div"></div>
+        <div class="second_div"></div>
+        <div class="third_div"></div>
+    </div>
+
+    <header>
+        <!-- <div class="brand_box" style="cursor: pointer;">
+            <img onclick="location.href='/index';" src="../static/images/job_junction-main.png" alt="Job Junction Logo" />
+        </div> -->
+        <nav>
+            <ul class="nav_links" id="nav_links">
+                <li class="nav_link" id="mainLogo"><a href="index.html">Job <span id="logo"> Matchers
+                </span></a></li>                
+                <li class="nav_link special_link" id="special_link"><a href="profile.html" id="userName">Your Profile</a></li>
+            </ul>
+
+        </nav>
+        <button class="btn nav-link" id="signoutLink" onclick="signout()" style="font-size: 1.2rem;">Signout</button>
+
+    </header>
+    <div class="myprofile">
+        <div class="header">
+            <p class="head"></p>
+            <p class="head">Welcome Back! <span id="user"></span></p>
+        </div>
+        <div class="body">
+            <div class="profiles">
+                <div class="profile">
+                    <p class="profile_title"><span class="job_category"></span></p>
+                    <a class="profile_title" style="text-align: center; display: block; margin-top: 16px;" href="mailto:{{session['email']}}"></a>
+                    <a class="profile_title" style="text-align: center; display: block; margin-top: 16px;" href="tel:{{session['number']}}"></a>
+                    <a class="nav_link special_link" id="special_link" style="text-align: center; display: block; margin-top: 16px;" href="jobs.html">Explore Jobs</a>
+                    <p class="profile_company" onclick="location.href='#'"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+ <!-- FOOTER SECTION -->
+
+ <footer class="footerData">
+    <div class=" grid grid-four-column">
+        <div class="about">
+            <h3>About Us</h3>
+            <p>Choose a job you love, and you will never have to work a day in your life. —Team Job Matchers<span><i
+                        class="fa fa-heart" style="font-size:1.5rem;color:red"></i> </span>
+            </p>
+        </div>
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li>
+                    <span>
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </span>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <span>
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </span>
+                    <a href="#services">Services</a>
+                </li>
+                <li>
+                    <span>
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </span>
+                    <a href="#reviews">Reviews</a>
+                </li>
+
+                <li>
+                    <span>
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </span>
+                    <a href="#contactBox">Contact Us</a>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="footer-help">
+            <h3>Have any Queries Feel Free to Reach out Us</h3>
+            <ul>
+                <li>
+                    <span>
+                        <ion-icon name="location-outline"></ion-icon>
+                    </span>
+                    <a href="#">Locate Here</a>
+                </li>
+                <li>
+                    <span>
+                        <ion-icon name="location-outline"></ion-icon>
+                    </span>
+                    <a href="contact.html" target="_blank">Contact Info</a>
+                </li>
+                <li>
+                    <span>
+                        <ion-icon name="call-outline"></ion-icon>
+                    </span>
+                    <a href="tel:+919486337716">Click Here</a>
+                </li>
+                <li>
+                    <span>
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </span>
+                    <a href="mailto:cecskiran23@gmail.com">Mail Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="container">
+        <div class="f-social-links">
+            <a href="https://www.instagram.com/im_real_fcg/" target="_blank">
+                <span>
+                    <ion-icon name="logo-instagram" class="icon"></ion-icon>
+                </span>
+            </a>
+            <a href="https://www.facebook.com/people/Kiran-Patil/100013552217592/" target="_blank">
+                <span>
+                    <ion-icon name="logo-facebook" class="icon"></ion-icon>
+                </span>
+            </a>
+            <a href="https://wa.me/919486337716">
+                <span>
+                    <ion-icon name="logo-whatsapp" class="icon"></ion-icon>
+                </span>
+            </a>
+            <a href="https://github.com/KIRAN2023?tab=repositories" target="_blank">
+                <span>
+                    <ion-icon name="logo-github" class="icon"></ion-icon>
+                </span>
+            </a>
+            <a href="https://www.linkedin.com/in/kiran-n-0a903b224" target="_blank">
+                <span>
+                    <ion-icon name="logo-linkedin" class="icon"></ion-icon>
+                </span>
+            </a>
+            <p style="color:darkgray" id="copyright">&copy;2022 All Rights Reserved by Job Matchers - Team CSE KSRCE
+            </p><br>
+
+        </div>
+    </section>
+</footer>
+
+
+    <!-- Script Section -->
+
+    <script>
+        let titleName = document.getElementById("title");
+        let users = document.getElementById('user');
+        let userName = document.getElementById('userName');
+        let signot = document.getElementById('signoutLink');
+        
+        var currentuser = null;
+
+        function username() {
+            let keep = localStorage.getItem("keepLogin");
+
+            if (keep == "yes") {
+                currentuser = JSON.parse(localStorage.getItem('user'));
+            } else {
+                currentuser = JSON.parse(sessionStorage.getItem('user'));
+            }
+        }
+
+        function signout() {
+            sessionStorage.removeItem('user');
+            localStorage.removeItem('user');
+            localStorage.removeItem('keepLogin');
+            window.location = "login.html";
+        }
+
+        window.onload = function () {
+            username();
+
+            if (currentuser == null) {
+                users.innerText = "To Job Matchers";
+                users.classList.replace("nav-link", "btn");
+                users.classList.add("btn-outline-primary");
+                users.href = "register.html";
+
+                signot.innerText = "Login";
+                signot.classList.replace("nav-link", "btn");
+                signot.classList.add("btn-outline-primary");
+                signot.href = "login.html";
+            } else {
+                users.innerText = currentuser.User_Name;
+                userName.innerText = "Hi! " + currentuser.User_Name;
+                users.classList.replace("btn", "nav-link");
+                users.classList.remove("btn-outline-primary");
+
+                signot.innerText = "Sign Out";
+                signot.classList.replace("btn", "btn");
+                signot.classList.remove("btn-outline-primary");
+                signot.href = "javascript:signout()";
+            }
+        }
+
+    </script>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</body>    
+</html>

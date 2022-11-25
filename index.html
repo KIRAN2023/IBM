@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Matchers</title>
+    <link rel="icon" type="image/gif/png" href="images/job_junction-logo-head.png">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Job Finder Application - Job Matchers">
+    <meta name="author" content="KIRAN, JAYASURIYA, JAGADEESHWARAN, DIVIYA DHARSHINI">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="indexstyles.css">
+    <script src="index.js" defer></script>
+
+
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "c9539449-0fd4-4aca-8b8b-3a6c109a71fa", // The ID of this integration.
+            region: "jp-tok", // The region your integration is hosted in.
+            serviceInstanceID: "39284af4-f9b4-4159-be01-8ca534e21855", // The ID of your service instance.
+            onLoad: function (instance) { instance.render(); }
+        };
+        setTimeout(function () {
+            const t = document.createElement('script');
+            t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+            document.head.appendChild(t);
+        });
+    </script>
+
+
+</head>
+
+<body id="body">
+
+
+    <div class="menu_icon" id="menu">
+        <div class="first_div"></div>
+        <div class="second_div"></div>
+        <div class="third_div"></div>
+    </div>
+
+    <header>
+        <!-- <div  class="brand_box">
+            <img src="../static/images/job_junction-main.png" alt="Job Junction Logo" />
+        </div> -->
+        <nav>
+            <ul class="nav_links" id="nav_links">
+                <li class="nav_link" id="mainLogo"><a href="jobs.html">Job <span id="logo"> Matchers
+                        </span></a></li>
+                <div class="registrationDiv">
+                    <li class="nav_link special_link" id="special_link"><a href="profile.html"
+                            id="contact_link">Your Profile</a></li>
+                    <li class="nav_link special_link" id="special_link"><a href="register.html"
+                            id="contact_link">Login / Register</a></li>
+
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="hero">
+        <div class="_hero hero_left">
+            <div>
+                <p class="hero_left-heading">If opportunity doesn't knock, build a door</p>
+                <p class="hero_left-content">Do something for somebody every day for which you do not get paid.</p>
+                <div class="hero_left-statistics">
+                    <div class="hero_left-stat">
+                        <p class="hero_left-statnum">100+</p>
+                        <p class="hero_left-statlabel">Start-Ups</p>
+                    </div>
+                    <div class="hero_left-stat">
+                        <p class="hero_left-statnum">500+</p>
+                        <p class="hero_left-statlabel">Job Offers</p>
+                    </div>
+                    <div class="hero_left-stat">
+                        <p class="hero_left-statnum">50+</p>
+                        <p class="hero_left-statlabel">Categories</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="_hero hero_right">
+            <img src="../static/images/Main_Image.webp" alt="job junction hero image">
+        </div>
+    </div>
+
+    <!-- Parallex Effect -->
+    <section class="section parallex">
+        <div class="overlay-parallex"></div>
+        <div class="container">
+            <h3><span>Job Matchers</span></h3>
+            <p>Best Place to Match your Skills</p>
+            <button class="btn"><a href="#contactBox">Contact Us</a></button>
+        </div>
+    </section>
+
+    <div class="ourservices" id="services">
+        <div class="header">
+            <div class="container">
+                <h3 class="common-heading">Our Services</h3>
+                <p class="description">From finding your skill to get a job in your area of interest 💖</p>
+
+            </div>
+        </div>
+        <div class="body">
+            <div class="content">
+                <div class="content_service">
+                    <p>Skill Finding</p>
+                </div>
+
+                <div class="content_service">
+                    <p>Skill Enhancement</p>
+                </div>
+
+                <div class="content_service">
+                    <p>Job Recommendation</p>
+                </div>
+
+                <div class="content_service">
+                    <p>Community Building</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="ourworks">
+        <div class="header">
+            <div class="container">
+                <h3 class="common-heading">Our Efforts</h3>
+                <p class="description">We aren't here to just talk, We are trying to solve your problems through our
+                    platform</p>
+            </div>
+        </div>
+
+        <div class="body">
+            <div class="content">
+                <div class="content_project">
+                    <img src="../static/images/job.jpg"
+                        alt="Job Junction Skill Finding Sessions">
+                    <h5>Skill Finding Sessions</h5>
+                    <p>Event organised by <span style="color: #FFB800;">Job Junction </span> in Karur. More than <span
+                            style="color: #FFB800;"> 100+ students participated,</span> and got guidance from us.</p>
+                    <button>View More</button>
+                </div>
+                <div class="content_project">
+                    <img src="../static/images/job1.jpg"
+                        alt="Job Junction Interview Sessions">
+                    <h5>Interview Sessions</h5>
+                    <p>From skill finding sessions, students got <span style="color: #040d31;">interviews based on their
+                            skill levels.</span> More than 200+ students got benefitted from this session.</p>
+                    <button>View More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="container">
+            <h3 class="common-heading">Our Words to you</h3>
+            <p class="description">Customer Reviews</p>
+        </div>
+    </div>
+<!-- Swiper -->
+
+<div class="swiper mySwiper Swipercontainer" id="reviews">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="userReview">
+          <p class="review"> Good Experience! </p>
+          <p class="reviewStar"> 4 <i class="fa-solid fa-star"></i> April 13th, 2022 </p>
+          <p>Job Matchers is one of the best platform for
+            Everyone one here we get better and best opportunity.</p>
+        </div>
+        <div class="user-info aboutGrid aboutGrid-two-columns">
+          <div class="user-profile">
+           
+          </div>
+          <div class="aboutUser">
+            <p>Vijay</p>
+            <div class="ratings"> <span class="rating">4 <i class="fa-solid fa-star fa-xs"></i>User</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="userReview">
+          <p class="review"> Nice Experience! </p>
+          <p class="reviewStar"> 5 <i class="fa-solid fa-star"></i> April 28th, 2022 </p>
+          <p> Flexibility at times
+            Good company to start your career with and We are satisfied.
+          </p>
+        </div>
+        <div class="user-info aboutGrid aboutGrid-two-columns">
+          <div class="user-profile">
+            
+          </div>
+          <div class="aboutUser">
+            <p>Raghavan</p>
+            <div class="ratings"> <span class="rating">5 <i class="fa-solid fa-star fa-xs"></i>User</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="userReview">
+          <p class="review"> Excellent ! </p>
+          <p class="reviewStar"> 5 <i class="fa-solid fa-star"></i> June 10th, 2022 </p>
+          <p>I obedient of your concoding establishment of our encouraging
+            possibilities of our kinds information.</p>
+        </div>
+        <div class="user-info aboutGrid aboutGrid-two-columns">
+          <div class="user-profile">
+           
+          </div>
+          <div class="aboutUser">
+            <p>Rohini</p>
+            <div class="ratings"> <span class="rating">5 <i class="fa-solid fa-star fa-xs"></i>User</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="userReview">
+          <p class="review"> Good Experience! </p>
+          <p class="reviewStar"> 3 <i class="fa-solid fa-star"></i> June 22th, 2022 </p>
+          <p> It ensures a proper work life balance and provides a really good employee friendly based on your skill</p>
+        </div>
+        <div class="user-info aboutGrid aboutGrid-two-columns">
+          <div class="user-profile">
+           
+          </div>
+          <div class="aboutUser">
+            <p>Vijay Kumar</p>
+            <div class="ratings"> <span class="rating">3 <i class="fa-solid fa-star fa-xs"></i>User</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+
+    <!-- CONTACT US SECTION -->
+
+    <section class="section contact-section" id="contactBox">
+        <div class="container">
+            <h3 class="common-heading">Contact Us</h3>
+        </div>
+
+        <form action="https://formspree.io/f/xeqnpnke" method="POST">
+            <div class="grid grid-two-column">
+                <div class="username">
+                    <label for="username"></label>
+                    <input type="text" name="username" placeholder="Username" autocomplete="off" required>
+                </div>
+                <div class="username">
+                    <label for="email"></label>
+                    <input type="email" name="email" placeholder="user@gmail.com" autocomplete="off" required>
+                </div>
+            </div>
+
+            <div class="">
+                <label for="subject"></label>
+                <input type="text" name="subject" placeholder="Subject" required>
+            </div>
+
+            <div class="">
+                <label for="textarea"></label>
+                <textarea type="textarea" cols="30" row="10" placeholder="Textarea" required name="message"></textarea>
+            </div>
+
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </section>
+
+
+    <!-- FOOTER SECTION -->
+
+    <footer class="footerData">
+        <div class=" grid grid-four-column">
+            <div class="about">
+                <h3>About Us</h3>
+                <p>Choose a job you love, and you will never have to work a day in your life. —Team Job Matchers<span><i
+                            class="fa fa-heart" style="font-size:1.5rem;color:red"></i> </span>
+                </p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li>
+                        <span>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </span>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <span>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </span>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li>
+                        <span>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </span>
+                        <a href="#reviews">Reviews</a>
+                    </li>
+
+                    <li>
+                        <span>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </span>
+                        <a href="#contactBox">Contact Us</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="footer-help">
+                <h3>Have any Queries Feel Free to Reach out Us</h3>
+                <ul>
+                    <li>
+                        <span>
+                            <ion-icon name="location-outline"></ion-icon>
+                        </span>
+                        <a href="#">Locate Here</a>
+                    </li>
+                    <li>
+                        <span>
+                            <ion-icon name="location-outline"></ion-icon>
+                        </span>
+                        <a href="contact.html" target="_blank">Contact Info</a>
+                    </li>
+                    <li>
+                        <span>
+                            <ion-icon name="call-outline"></ion-icon>
+                        </span>
+                        <a href="tel:+919486337716">Click Here</a>
+                    </li>
+                    <li>
+                        <span>
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </span>
+                        <a href="mailto:cecskiran23@gmail.com">Mail Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="container">
+            <div class="f-social-links">
+                <a href="https://www.instagram.com/im_real_fcg/" target="_blank">
+                    <span>
+                        <ion-icon name="logo-instagram" class="icon"></ion-icon>
+                    </span>
+                </a>
+                <a href="https://www.facebook.com/people/Kiran-Patil/100013552217592/" target="_blank">
+                    <span>
+                        <ion-icon name="logo-facebook" class="icon"></ion-icon>
+                    </span>
+                </a>
+                <a href="https://wa.me/919486337716">
+                    <span>
+                        <ion-icon name="logo-whatsapp" class="icon"></ion-icon>
+                    </span>
+                </a>
+                <a href="https://github.com/KIRAN2023?tab=repositories" target="_blank">
+                    <span>
+                        <ion-icon name="logo-github" class="icon"></ion-icon>
+                    </span>
+                </a>
+                <a href="https://www.linkedin.com/in/kiran-n-0a903b224" target="_blank">
+                    <span>
+                        <ion-icon name="logo-linkedin" class="icon"></ion-icon>
+                    </span>
+                </a>
+                <p style="color:darkgray" id="copyright">&copy;2022 All Rights Reserved by Job Matchers - Team CSE KSRCE
+                </p><br>
+
+            </div>
+        </section>
+    </footer>
+
+
+    <!-- Script Section -->
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      autoplay: {
+        delay: 2500,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+
+  </script>
+</body>

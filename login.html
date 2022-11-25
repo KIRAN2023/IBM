@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to find your job - Job Matchers</title>
+    <link rel="icon" type="image/gif/png" href="images/job_junction-logo-head.png">
+    <script src="https://kit.fontawesome.com/7bb9495e7b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="loginstyles.css">
+    <link rel="stylesheet" href="indexstyles.css">
+
+    <script src="index.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    <style>
+        .Register {
+            padding: 2rem 4rem;
+            border: 1px solid red;
+            border-radius: 3rem;
+            background-color: rgb(203, 224, 224);
+            width: 30rem;
+            height: 30rem;
+        }
+
+        .loginBox {
+            display: grid;
+            place-items: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="menu_icon" id="menu">
+        <div class="first_div"></div>
+        <div class="second_div"></div>
+        <div class="third_div"></div>
+    </div>
+
+    <header>
+        <!-- <div class="brand_box" style="cursor: pointer;">
+            <img onclick="location.href='/index'" src="../static/images/job_junction-main.png" alt="Job Junction Logo" />
+        </div> -->
+        <nav>
+            <ul class="nav_links" id="nav_links">
+                <li class="nav_link" id="mainLogo"><a href="index.html">Job <span id="logo"> Matchers
+                        </span></a></li>
+                <li class="nav_link special_link" id="special_link"><a href="register.html" id="contact_link">Login /
+                        Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="footer">
+        <div class="header">
+            <p class="head">Login to <span style="color:#22c2c2">Pursuing your goals</span></p>
+            <p class="description">You are at right time. Start learn and apply for jobs</p>
+        </div>
+        <div class="loginBox">
+            <div class="Register m-3" name="Registers" id="Reg">
+                <h2 class="mb-3 text-center">Login</h2>
+                <input type="text" placeholder="Register Number" id="registerNumber" class="form-control mb-3" required>
+                <input type="text" placeholder="E-Mail" id="mail" class="form-control mb-3" required>
+                <input type="text" placeholder="Password" id="password" class="form-control mb-3" required>
+                <div class="custom-control custom-switch mb-3">
+                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                    <label class="custom-control-label" for="customSwitch1">Keep me login</label>
+                </div>
+                <button type="text" id="submit" class="btn btn-outline-danger mb-3 b-3 w-100">Login</button>
+                <a href="Register.html" class="badge badge-secondary p-2 w-100">Create a Account</a>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="footer">
+        <div class="header">
+            <p class="description" style="cursor:pointer;" onclick="location.href='register.html'">Don't have an
+                account?<span style="color:#2246C2"> Register</span></p>
+        </div>
+    </div>
+
+    <!-- FOOTER SECTION -->
+
+    <footer class="footerData">
+        <div class=" grid grid-four-column">
+            <div class="about">
+                <h3>About Us</h3>
+                <p>Choose a job you love, and you will never have to work a day in your life. —Team Job Matchers<span><i
+                            class="fa fa-heart" style="font-size:1.5rem;color:red"></i> </span>
+                </p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li>
+                        <span>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </span>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <span>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </span>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li>
+                        <span>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </span>
+                        <a href="#reviews">Reviews</a>
+                    </li>
+
+                    <li>
+                        <span>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </span>
+                        <a href="#contactBox">Contact Us</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="footer-help">
+                <h3>Have any Queries Feel Free to Reach out Us</h3>
+                <ul>
+                    <li>
+                        <span>
+                            <ion-icon name="location-outline"></ion-icon>
+                        </span>
+                        <a href="#">Locate Here</a>
+                    </li>
+                    <li>
+                        <span>
+                            <ion-icon name="location-outline"></ion-icon>
+                        </span>
+                        <a href="contact.html" target="_blank">Contact Info</a>
+                    </li>
+                    <li>
+                        <span>
+                            <ion-icon name="call-outline"></ion-icon>
+                        </span>
+                        <a href="tel:+919486337716">Click Here</a>
+                    </li>
+                    <li>
+                        <span>
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </span>
+                        <a href="mailto:cecskiran23@gmail.com">Mail Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="container">
+            <div class="f-social-links">
+                <a href="https://www.instagram.com/im_real_fcg/" target="_blank">
+                    <span>
+                        <ion-icon name="logo-instagram" class="icon"></ion-icon>
+                    </span>
+                </a>
+                <a href="https://www.facebook.com/people/Kiran-Patil/100013552217592/" target="_blank">
+                    <span>
+                        <ion-icon name="logo-facebook" class="icon"></ion-icon>
+                    </span>
+                </a>
+                <a href="https://wa.me/919486337716">
+                    <span>
+                        <ion-icon name="logo-whatsapp" class="icon"></ion-icon>
+                    </span>
+                </a>
+                <a href="https://github.com/KIRAN2023?tab=repositories" target="_blank">
+                    <span>
+                        <ion-icon name="logo-github" class="icon"></ion-icon>
+                    </span>
+                </a>
+                <a href="https://www.linkedin.com/in/kiran-n-0a903b224" target="_blank">
+                    <span>
+                        <ion-icon name="logo-linkedin" class="icon"></ion-icon>
+                    </span>
+                </a>
+                <p style="color:darkgray" id="copyright">&copy;2022 All Rights Reserved by Job Matchers - Team CSE KSRCE
+                </p><br>
+
+            </div>
+        </section>
+    </footer>
+
+
+    <!-- Script Section -->
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyC_YxWCfrQtixXrPOi_BPRz4yjyH2Zl6l8",
+            authDomain: "fir-f430f.firebaseapp.com",
+            databaseURL: "https://fir-f430f-default-rtdb.firebaseio.com",
+            projectId: "fir-f430f",
+            storageBucket: "fir-f430f.appspot.com",
+            messagingSenderId: "1094448116865",
+            appId: "1:1094448116865:web:0dc6756ffdd059aca94980"
+        };
+
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+
+        import { getDatabase, ref, set, child, get } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-database.js";
+
+        const db = getDatabase();
+
+
+        const Reg = document.getElementById('registerNumber');
+        const email = document.getElementById('mail');
+        const password = document.getElementById('password');
+        const sub = document.getElementById('submit');
+
+        function login() {
+            const dbRef = ref(db);
+            get(child(dbRef, "UsersList/" + Reg.value)).then((snapshot) => {
+                if (snapshot.exists()) {
+                    let decrypt = decryptPass(snapshot.val().Password);
+                    let mail = snapshot.val().MailId;
+                    let reg = snapshot.val().Register_Number;
+                    if (reg == Reg.value && mail == email.value && decrypt == password.value && password.value != "") {
+                        logon(snapshot.val());
+                    } else if (reg != Reg.value || mail != email.value || decrypt != password.value || password.value == "") {
+                        alert("Invalid Credentials");
+                    }
+                }
+            });
+        }
+
+
+        function decryptPass(pass) {
+            var passv = CryptoJS.AES.decrypt(pass, password.value);
+            return passv.toString(CryptoJS.enc.Utf8);
+        }
+        // snapshot will send entire object to the login function userdata will contain object
+        function logon(user) {
+            let keepLogin = document.getElementById('customSwitch1').checked;
+
+            if (!keepLogin) {
+                sessionStorage.setItem('user', JSON.stringify(user));
+                window.location = "profile.html";
+            } else {
+                localStorage.setItem('keepLogin', JSON.stringify("yes"));
+                localStorage.setItem('user', JSON.stringify(user));
+                window.location = "profile.html";
+            }
+
+        }
+
+        sub.addEventListener('click', login);
+    </script>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
